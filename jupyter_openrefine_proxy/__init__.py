@@ -7,7 +7,7 @@ import shutil
 def get_executable(prog):
     # Find prog in known locations
     other_paths = [
-        os.path.join('/home/jovyan/.openrefine', prog)
+        os.path.join('/usr/lib/openrefine', prog)
     ]
     if shutil.which(prog):
         return prog
