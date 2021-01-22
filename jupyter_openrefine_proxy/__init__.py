@@ -33,6 +33,7 @@ def setup_openrefineserver():
 
     return {
         'command': _get_cmd,
+        'timeout': 120,
         'port': 3333,
         'environment': _get_env,
         'launcher_entry': {
